@@ -1,3 +1,18 @@
+.thumb1 { 
+  background: url(blah.jpg) 50% 50% no-repeat; /* 50% 50% centers image in div */
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+}
+
+.thumb1 a {
+  display: block;
+  width: 250px;
+  height: 250px;
+}
+
+.thumb1 a:hover { YOUR HOVER STYLES HERE }
+
 #sidebar {
   padding: 10em 0em 0em 0.5em;
   background: #312450;
@@ -45,6 +60,10 @@
   border: 0!important;
   box-shadow: none!important;
   background: #fff;
+}
+
+.iconcolor {
+  background: #efcab1
 }
 
 /*!
