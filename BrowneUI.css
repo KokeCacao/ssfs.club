@@ -1,0 +1,305 @@
+/*
+Background: F7EBE1;
+Title: F2E5DA;
+Words: 87746C;
+
+Highlight: B13254;
+Highlight-hovered: DBC8B8;
+Delete: ;
+
+Code: 654D37;
+Dark-background: DBC8B8;
+Light-background: F2E5DA;
+Boundary: B39A8F;
+
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serf;
+    background-image: url(css/img-noise-361x370.png);
+    background-color: #F7EBE1;
+    margin:0;
+    padding:0;
+}
+
+h1 {
+    color: #554037;
+    font-weight: 300;
+    font-size: 4em;
+    /* cancel default h1 */
+    -webkit-margin-before: 0.2em;
+    -webkit-margin-after: 0.2em;
+}
+
+h2 {
+    color: #554037;
+    font-weight: 300;
+    font-size: 1.8em;
+}
+
+h3 {
+    color: #554037;
+    font-weight: 300;
+    font-size: 1.3em;
+}
+
+p {
+    margin:0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/* canvas */
+canvas{
+  position: absolute;
+}
+
+/* container */
+.container {
+    width: 60%;
+    margin:25px auto 50px auto;
+    color: #87746C;
+    line-height: 1.5em;
+    text-rendering: optimizelegibility;
+    letter-spacing: 0.01rem;
+}
+.container a {
+}
+.container a:hover {
+}
+
+/* list */
+ol, ul {
+    /*list-style-type: none;*/
+    margin: 0;
+    padding-left: 2em
+}
+
+/* section left/right */
+section.one-third {
+    padding: 1em;
+    width: 18em;
+    position: relative;
+    display: block;
+}
+.floatbox {
+    /*display: inline-block;*/
+    /*text-align: center;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    list-style: none;
+    vertical-align: baseline;
+}
+
+/* Typing Effect */
+.typing{
+    -webkit-animation: typing 1s infinite ease-in-out
+}
+@-webkit-keyframes typing{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    51%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* icon */
+.fa {
+    font-weight: 300;
+    font-size: 1.5em;
+}
+.icon-title {
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    padding: 2px 4px;
+    font-size: 90%;
+    background-color: #F2E5DA;
+    border: 1px solid #F2E5DA;
+    border-radius: 8px;
+
+    page-break-inside: avoid;
+    line-height: 1.6;
+    display: block;
+    /*text-overflow: ellipsis;*/
+    /* Required for text-overflow to do anything */
+}
+
+/* work with hide.js */
+.fade {
+    opacity: 0;
+}
+
+/* <hr> boarder */
+hr.title {
+    border: 0;
+    border-bottom: 2px dashed #F2E5DA;
+    background: #DBC8B8;
+}
+
+hr.cut {
+  border-top: 1px dashed #DBC8B8;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 0px;
+}
+hr.cut:after {
+  content: '\002702';
+  display: inline-block;
+  position: relative;
+  top: -12px;
+  left: 40px;
+  padding: 0 3px;
+  background: #F7EBE1;
+  color: #DBC8B8;
+  font-size: 18px;
+}
+
+/* no down paddings */
+.no-gap {
+    margin-bottom: 15px;
+}
+
+/* delete */
+.delete {
+    background-color: #87746C;
+    color: #87746C;
+    text-shadow: none;
+    border: 1px solid #87746C;
+    border-radius: 4px;
+}
+.delete:hover {
+    background-color: transparent;
+    color: #87746C;
+    text-shadow: none;
+    background-color: #F2E5DA;
+    border: 1px solid #B39A8F;
+    border-radius: 4px;
+}
+
+/* bold */
+b {
+    font-weight: bold;
+}
+
+/* ruby */
+ruby {
+    font-family: BlinkMacSystemFont,-apple-system,"Helvetica Neue",Tahoma,Arial,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,メイリオ,Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+    font-family: initial;
+    font-feature-settings: "locl" on;
+    -webkit-font-feature-settings: "locl" on;
+    -webkit-locale: "ja";
+}
+
+/* quote */
+.quote {
+    border-left: 4px solid #87746C;
+    padding-left: .8em;
+}
+
+/* code */
+code, .code-box {
+    color: #654D37;
+}
+
+code {
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    padding: 2px 4px;
+    font-size: 90%;
+    background-color: #DBC8B8;
+    border-radius: 4px;
+}
+
+.code-box {
+    font-family: /*Menlo, Monaco, Consolas, */"Courier New", Courier, monospace;
+    margin-top: 0.5em;
+    padding: 9px 14px;
+    margin-bottom: 14px;
+    background-color: #F2E5DA;
+    border: 1px solid #B39A8F;
+    border-radius: 4px;
+    page-break-inside: avoid;
+    line-height: 1.6;
+    display: block;
+    word-wrap: normal;
+    /*text-overflow: ellipsis;*/
+    /* Required for text-overflow to do anything */
+    white-space: nowrap;
+    overflow: auto;
+}
+
+.code-box .highlight {
+    color: #B13254;
+}
+
+/* scroll bar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #F2E5DA;
+    /*border-left: 1px solid #B39A8F;*/
+    border-right: 1px solid #B39A8F;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #87746C;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    /*background: #B13254;*/
+}
+
+/* link */
+.link {
+    color: #B13254;
+    text-decoration: none;
+    border-bottom: dotted 2px #DBC8B8;
+}
+
+.link:hover {
+    padding: 2px 0px;
+    background-color: #DBC8B8;
+    border-radius: 4px;
+}
+
+/* button */
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -moz-user-select: none;
+    background-image: none;
+    border: 1px solid #B39A8F;
+    border-radius: 4px;
+    color: #804A3A;
+    text-decoration: none;
+}
+
+.btn:hover {
+    border: 1px solid transparent;
+    background-color: #B13254;
+    color: #FFF;
+}
